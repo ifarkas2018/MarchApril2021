@@ -1,0 +1,74 @@
+/* project : Time Manager, author : Ingrid Farkas, 2020 */ 
+
+/* the modal box (background color) */
+.modal {
+  display: none; /* hidden by default */
+  position: fixed; /* stay in place */
+  align: center;
+  z-index: 1; /* be on top */
+  padding-top: 100px; /* location of the box */
+  left: 0; 
+  top: 0;
+  width: 100%; /* full width */
+  height: 100%; /* full height */
+  overflow: auto; /* enable scroll if needed */
+  background-color: rgb(0,0,0); /* fallback color */
+  background-color: rgba(0,0,0,0.4); /* black w/ opacity */
+}
+
+/* rules for the content of the modal box */
+.modal-content {
+  position: relative;
+  background-color: #fefefe; /* background colour */
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888; /* border type */
+  width: 30%; /* width of the modal box */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* add animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; left:-100px; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0;  left:-100px; opacity:1}
+}
+
+/* the close button */
+.close {
+  color: white; /* colour - the close button */
+  float: right; /* float the button to the right */
+  font-size: 28px; /* font-size on the button */
+  font-weight: bold; /* bold for the font */
+}
+
+/* CSS rules used when the user hovers over the close button, or the button is in focus */
+.close:hover,
+.close:focus {
+  color: #000; /* color of the text */
+  text-decoration: none; /* no text decoration */
+  cursor: pointer; /* show the cursor as the pointer */
+}
+
+/* header of the modal box */
+.modal-header {
+  padding: 2px 16px;
+  color: white; /* text colour */
+}
+
+/* CSS rule - the body of the modal box */
+.modal-body {padding: 2px 16px;}
+
+/* CSS rule for the footer of the modal box */
+.modal-footer {
+  padding: 2px 16px;
+  color: white; /* color of the background */
+}

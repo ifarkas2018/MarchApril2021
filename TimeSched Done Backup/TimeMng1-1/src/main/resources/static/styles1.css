@@ -1,0 +1,74 @@
+/* project : Time Manager, 2020 */ 
+/* author: Ingrid Farkas */
+
+body {
+  background: rgb(155, 145, 145);
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+ul {
+  list-style-type:square !important; // style of the bullet (in the list)
+}
+
+li {
+  color: #ff0000; // color of the bullet (in the list)
+}
+
+li span {
+  color: #000000; // color of the list item
+}
+
+/* color of the email link after the link was clicked on */
+.email a:visited {
+  color: grey !important;  
+} 
+            
+/* color of the email link when the user hovers on it */
+.email a:hover, a:active {
+  color: red !important;   
+} 
+            
+/* color of the email link */ 
+.email a {
+  color: rgb(13, 105, 174) !important; 
+}
+
+.content {
+  max-width: 1300px;
+  background: white;
+  margin: auto;
+}
+
+.color_footer {
+  background: #f3f1f1;
+}
+
+.form_background {
+  background: rgb(205, 205, 205); 
+}
+
+/* setting the background color of the element */ 
+.w3-theme-m1 {color:#000 !important; background-color:#e9f0f6 !important}
+
+/* when the user hovers the mouse over the element, setting the background color and the color of the text of the element */
+.w3-hover-theme-l4:hover {color:rgb(248, 198, 104) !important; background-color:#e9f0f6 !important}
+
+/* when the user hovers the mouse over the element, setting the color of the text of the element */
+.w3-hover-text-orange:hover {color: rgb(248, 198, 104) !important}  
+
+/* setting the color of the text of the element */ 
+.w3-text-theme-m1 {color: #0073d8 !important} 
+
+/* setting black color of the text */
+.black_text {color: black} 
+
+/* setting red color of the text and the font size */
+.red_text {
+  color: red !important; /* red text color */
+  font-size: 85%;
+}
+
+/* color of the button */
+.w3-camo-gray, .w3-camo-grey {
+  color:#fff;background-color:#9495a5
+}
