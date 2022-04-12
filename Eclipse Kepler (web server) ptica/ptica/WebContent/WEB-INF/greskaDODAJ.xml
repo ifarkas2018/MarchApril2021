@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/greska/rukov_greska.jsp</location>
+    </error-page>
+    
